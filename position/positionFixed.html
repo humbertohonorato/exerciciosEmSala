@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Fixed</title>
+</head>
+
+<body>
+    <style>
+        body {
+            margin: 0;
+            padding: 60px 0;
+            background-image: url(rato.png);
+            /*colcoar imagem como fundo da pag.*/
+            background-repeat: no-repeat;
+            /* background-attachment: scroll; */
+            background-position: top center;
+            background-size: 1000px 800px;
+            height: 1200px;
+        }
+
+        .topo {
+            position: fixed;
+            /* transform: rotate(90deg); */
+            top: 0px;
+            left: 0px;
+            height: 10px;
+            width: 100%;
+            box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.6);
+            padding: 15px 0;
+            background-color: cornsilk;
+            text-align: center;
+            font-weight: bold;
+            font-family: arial, verdana, sans-serif;
+
+        }
+
+        p {
+            max-width: 1000px;
+            min-width: 500px;
+            margin: 0 auto;
+            padding: 0 40px;
+            font-size: 1em;
+            text-align: justify;
+            line-height: 2em;
+        }
+
+        form {
+            box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.8);
+            text-align: center;
+            width: 250px;
+            height: 150px;
+            padding: 10px;
+            background-color: slategray;
+            margin: 100px 0 0 -50px;
+            left: 50%;
+            position: relative;
+        }
+    </style>
+
+    <div class="topo">Topo fixo. Isso pode ser um cabeçalho</div>
+
+    <p> 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, perferendis nostrum eos maiores, ex id ullam
+        eius minima quo accusamus esse deserunt corrupti facere ipsa voluptatum vel necessitatibus commodi tenetur?</p>
+    <p> 2 Ipsum dolor sit amet consectetur adipisicing elit. Itaque, perferendis nostrum eos maiores, ex id ullam
+        eius minima quo accusamus esse deserunt corrupti facere ipsa voluptatum vel necessitatibus commodi tenetur?</p>
+    <p> 3 Dolor sit amet consectetur adipisicing elit. Itaque, perferendis nostrum eos maiores, ex id ullam
+        eius minima quo accusamus esse deserunt corrupti facere ipsa voluptatum vel necessitatibus commodi tenetur?</p>
+    <p> 4 Sit amet consectetur adipisicing elit. Itaque, perferendis nostrum eos maiores, ex id ullam
+        eius minima quo accusamus esse deserunt corrupti facere ipsa voluptatum vel necessitatibus commodi tenetur?</p>
+    <p> 5 Amet consectetur adipisicing elit. Itaque, perferendis nostrum eos maiores, ex id ullam
+        eius minima quo accusamus esse deserunt corrupti facere ipsa voluptatum vel necessitatibus commodi tenetur?</p>
+    <p> 6 Consectetur adipisicing elit. Itaque, perferendis nostrum eos maiores, ex id ullam
+        eius minima quo accusamus esse deserunt corrupti facere ipsa voluptatum vel necessitatibus commodi tenetur?</p>
+    <p> 7 Adipisicing elit. Itaque, perferendis nostrum eos maiores, ex id ullam
+        eius minima quo accusamus esse deserunt corrupti facere ipsa voluptatum vel necessitatibus commodi tenetur?</p>
+    <p> 8 Elit. Itaque, perferendis nostrum eos maiores, ex id ullam
+        eius minima quo accusamus esse deserunt corrupti facere ipsa voluptatum vel necessitatibus commodi tenetur?</p>
+    <p> 9 Itaque, perferendis nostrum eos maiores, ex id ullam
+        eius minima quo accusamus esse deserunt corrupti facere ipsa voluptatum vel necessitatibus commodi tenetur?</p>
+    <p> 10 Perferendis nostrum eos maiores, ex id ullam
+        eius minima quo accusamus esse deserunt corrupti facere ipsa voluptatum vel necessitatibus commodi tenetur?</p>
+
+    <form action="" method="post">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome">
+        <br><br>
+        <label for="email">Email</label>
+        <input type="email" name="" id="email">
+        <br><br>
+        <label for="senha">Senha</label>
+        <input type="password" id="senha">
+        <br><br>
+        <input type="submit" value="Cadastrar">
+    </form>
+</body>
+
+</html>

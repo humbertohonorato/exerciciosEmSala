@@ -1,0 +1,18 @@
+[
+    {
+        "isbn": "abc0987654321",
+        "title": "O chamado da Floresta",
+        "author": "Jack London",
+        "publish_date": "2003-03-13",
+        "publisher": "Jazon Books",
+        "numOfPages": 254
+    },
+    {
+        "isbn": "abc0987654213",
+        "title": "As crônicas do Gelo e Fogo",
+        "author": "George R. R. Martin",
+        "publish_date": "1925-08-15",
+        "publisher": "Suma de Letras",
+        "numOfPages": 648
+    }
+]

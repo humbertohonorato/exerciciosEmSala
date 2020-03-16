@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao bootstrap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <style>
+        .tamanho {
+            width: 18em;
+        }
+    </style>
+    <div class="container">
+        <h1 class="text-center">Bootstrap </h1>
+        <p class="text-center text-danger">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sit, quos
+            voluptatibus sed veritatis atque
+            tempore voluptatum, nemo quo deserunt vitae ab blanditiis modi quis doloribus, nobis praesentium pariatur
+            labore!</p>
+    </div>
+
+    <section class="card tamanho">
+        <div class="card-body">
+            <h5 class="card-title">Hello Word!</h5>
+            <p class="card-text"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque dicta iusto
+                suscipit magni, nam
+                excepturi voluptas, eum repudiandae maxime eaque qui voluptatem, molestiae optio quia consequatur facere
+                pariatur aliquid est!</p>
+            <a href="#" class="btn btn-primary">Go Somewhere</a>
+        </div>
+    </section>
+
+    <section class="card tamanho">
+        <div class="card-body">
+            <h5 class="card-title">Título Principal</h5>
+            <h6 class="card-subtitle">Subtítulo</h6>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis modi, eligendi
+                blanditiis quod, sint
+                magnam ullam ea eum non perferendis voluptas dignissimos deserunt quasi ipsa itaque numquam sunt aliquam
+                omnis?</p>
+            <a href="#" class="card-link">Go Somewhere</a>
+            <a href="#" class="card-link">Go Go Go!</a>
+        </div>
+
+    </section>
+
+    <!-- Modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalexemplo">Modal</button>
+    <div class="modal fade" id="modalexemplo">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal Title</h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum aperiam suscipit iusto veniam
+                        perferendis sint impedit praesentium, quisquam obcaecati excepturi, quae eos fugiat assumenda
+                        labore dolorum itaque voluptatum officia! Ullam!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Salvar Alterações</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
