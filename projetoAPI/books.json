@@ -1,0 +1,26 @@
+[
+    {
+        "isbn": "9876543210",
+        "title": "A vida é bela",
+        "author": "Humberto Honorato",
+        "publisher_date": "2014-12-14",
+        "publisher": "Senac",
+        "numOfPages": "472"
+    },
+    {
+        "isbn": "0123456789",
+        "title": "A vida ",
+        "author": "Humberto Honorato",
+        "publisher_date": "2014-12-15",
+        "publisher": "Senac",
+        "numOfPages": "572"
+    },
+    {
+        "isbn": "1023456798",
+        "title": "Vida ",
+        "author": "Humberto Honorato",
+        "publisher_date": "2014-12-15",
+        "publisher": "Senac",
+        "numOfPages": "672"
+    }
+]

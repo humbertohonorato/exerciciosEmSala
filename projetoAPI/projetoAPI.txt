@@ -1,0 +1,104 @@
+// ARQUIVO index.js
+
+const express = require('express');
+const bodyParser = require('body-parser');
+const fs = require('fs');
+const app = express();
+
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+
+let rawbooks = fs.readFileSync('books.json'); // ler o arquivo books.json
+let books = JSON.parse(rawbooks); // converter rawbooks para json
+
+app.get('/', (req, res) => {
+    res.send('Hellow World!');
+});
+
+app.get('/books', (req, res) => {
+    res.json(books);
+});
+
+app.post('/books', (req, res) => {
+    const book = req.body;
+    if (Array.isArray(book)) {
+        for (item of book) {
+            books.push(item);
+        }
+    }
+    else {
+        books.push(book);
+    }
+
+    let jsonList = JSON.stringify(books);
+    fs.writeFile('books.json', jsonList, 'utf8', () => { });
+    res.send('Livro cadastrado com sucesso!');
+});
+
+app.get('/books/:isbn', (req, res) => {
+    const isbn = req.params.isbn;
+    for (let book of books) {
+        if (book.isbn === isbn) {
+            res.json(book);
+            return;
+        }
+    }
+    res.status(404).send('Livro não encontrado');
+});
+
+app.listen(3000);
+
+
+
+
+
+// ARQUIVO books.json
+
+[
+    {
+        "isbn": "9876543210",
+        "title": "A vida é bela",
+        "author": "Humberto Honorato",
+        "publisher_date": "2014-12-14",
+        "publisher": "Senac",
+        "numOfPages": "472"
+    },
+    {
+        "isbn": "0123456789",
+        "title": "A vida ",
+        "author": "Humberto Honorato",
+        "publisher_date": "2014-12-15",
+        "publisher": "Senac",
+        "numOfPages": "572"
+    },
+    {
+        "isbn": "1023456798",
+        "title": "Vida ",
+        "author": "Humberto Honorato",
+        "publisher_date": "2014-12-15",
+        "publisher": "Senac",
+        "numOfPages": "672"
+    }
+]
+
+
+
+
+
+//ARQUIVO package.json
+
+{
+  "name": "projeto-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
