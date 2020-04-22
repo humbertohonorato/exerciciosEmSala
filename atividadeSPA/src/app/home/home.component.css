@@ -1,3 +1,22 @@
+.carousel-item,
+.carousel-inner,
+.carousel-inner img {
+  height: 100%;
+  width: auto;
+}
+
+.carousel-item {
+  text-align: center;
+}
+
+.carousel {
+    height: 500px;
+  }
+
+  .carousel-inner img {
+    width: 100%;
+    height: auto;
+  }
 
 .parallax{
     background-image: url('https://i.imgur.com/LAAoRlo.jpg');
@@ -11,3 +30,7 @@
 
 }
 
+.card img {
+    width: 32rem;
+    height:30rem;
+}

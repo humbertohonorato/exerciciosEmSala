@@ -1,7 +1,7 @@
 <div class="container">
-    <div class="row mt-5 mb-5">
-        <div class="col">
-            <form>
+    <form>
+        <div class="row mt-5 mb-5">
+            <div class="col-md-12">
                 <div class="form-group">
                     <label for="nome">Nome</label>
                     <input type="text" class="form-control" id="nome" placeholder="Nome">
@@ -11,16 +11,24 @@
                     <label for="email">email</label>
                     <input type="email" class="form-control" id="email" placeholder="Email">
                 </div>
+            </div>
 
+            <div class="col-md-6">
                 <div class="form-group">
-                    <label for="opniao">Dê sua opnião</label>
-                    <textarea id="opniao" cols="30" rows="10" class="form-control"></textarea>
+                    <label for="opniao">Descrição da receita</label>
+                    <textarea id="opniao" cols="10" rows="10" class="form-control"></textarea>
                 </div>
+            </div>
 
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="imagem">Imagem</label>
+                    <input type="file" class="form-control" id="imagem">
+                </div>
+            </div>
 
-                <button class="btn btn-dark" type="button">Enviar</button>
+            <button class="btn btn-dark" type="button">Enviar</button>
 
-            </form>
         </div>
-    </div>
+    </form>
 </div>
