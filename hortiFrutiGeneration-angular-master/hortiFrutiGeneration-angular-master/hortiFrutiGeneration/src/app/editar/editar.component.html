@@ -1,0 +1,43 @@
+<div class="container">
+
+    <h3 class="text-center text-monospace mt-5">Alteração de Produto</h3>
+
+    <div class="row my-5">
+
+        <div class="col-md-4">
+            <div class="imagem">
+                <img src="{{ produto.imagem }}" alt="Imagem do produto"> 
+            </div>
+        </div>
+
+        <div class="col-md-8">
+
+            <div>
+
+                <div class="form-group my-3">
+
+                    <label for="nome" class="text-monospace">Nome:</label>
+                    <input type="text" name="nome" id="nome" class="form-control" [(ngModel)]="produto.nome">
+
+                    <label for="preco" class="text-monospace mt-3">Preço:</label>
+                    <input type="text" name="preco" id="preco" class="form-control" [(ngModel)]="produto.preco">
+
+                    <label for="imagem" class="text-monospace mt-3">Imagem:</label>
+                    <input type="text" name="imagem" id="imagem" class="form-control" [(ngModel)]="produto.imagem">
+
+                    <label for="quantidade" class="text-monospace mt-3">Quantidade em Estoque:</label>
+                    <input type="text" name="quantidade" id="quantidade" class="form-control"
+                        [(ngModel)]="produto.qtdEstoque">
+
+                    <div class="mt-5 d-flex justify-content-center">
+                        <button type="button" class="btn btn-outline-success" (click)="salvar()">Salvar</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

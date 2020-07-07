@@ -1,0 +1,27 @@
+.alinhamento{
+    text-align: center;
+}
+
+.faFacebook, .faLinkedin, .faInstagram, .faTwitter, .faPinterest{
+    color: gray;
+}
+
+.faFacebook:hover{
+    color: #3b5998;
+ }
+ 
+ .faLinkedin:hover{
+  color: #0072b1;
+ }
+ 
+ .faInstagram:hover{
+  color: #D9236E;
+ }
+
+ .faTwitter:hover{
+    color: #2AA9E0;
+ }
+
+ .faPinterest:hover{
+     color: #E60023;
+ }

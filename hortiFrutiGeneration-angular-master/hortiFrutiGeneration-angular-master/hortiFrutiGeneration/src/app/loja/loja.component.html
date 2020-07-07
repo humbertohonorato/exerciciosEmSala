@@ -1,0 +1,71 @@
+<div class="container">
+
+    <div class="row my-5">
+
+        <div class="col-md-12">
+
+            <div>
+                <h3 class="text-center text-monospace">Cadastre um Produto</h3>
+
+                <div class="form-group my-3">
+
+                    <label for="nome" class="text-monospace">Nome:</label>
+                    <input type="text" name="nome" id="nome" class="form-control" [(ngModel)]="produto.nome">
+
+                    <label for="preco" class="text-monospace mt-3">Preço:</label>
+                    <input type="text" name="preco" id="preco" class="form-control" [(ngModel)]="produto.preco">
+
+                    <label for="imagem" class="text-monospace mt-3">Imagem:</label>
+                    <input type="text" name="imagem" id="imagem" class="form-control" [(ngModel)]="produto.imagem">
+
+                    <label for="quantidade" class="text-monospace mt-3">Quantidade em Estoque:</label>
+                    <input type="text" name="quantidade" id="quantidade" class="form-control"
+                        [(ngModel)]="produto.qtdEstoque">
+
+                    <div class="mt-5 d-flex justify-content-center">
+                        <button type="button" class="btn btn-outline-success" (click)="cadastrar()">Cadastrar</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <hr class="my-5">
+
+    <h3 class="text-monospace text-center my-5">Produtos da loja</h3>
+
+    <div class="row mb-5">
+
+        <div class="col-md-4 d-flex justify-content-center" *ngFor="let product of listaProdutos">
+
+            <div class="card my-5" style="width: 18rem">
+
+                <div class="d-flex justify-content-center">
+                    <img src="{{ product.imagem }}" class="card-img-top imagem" alt="Imagem do produto">
+                </div>
+
+                <div class="card-body text-center ">
+                    <h5 class="card-title"> {{ product.nome }} </h5>
+                    <p>Código: {{ product.id }} </p>
+                    <p class="card-text">Preço: R${{ product.preco }} </p>
+                    <p>Quantidade em Estoque: {{ product.qtdEstoque }} </p>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 d-flex justify-content-start">
+                        <button type="button" class="btn btn-outline-info"
+                            [routerLink]="['/editar', product.id]">Editar</button>
+                    </div>
+
+                    <div class="col-md-6 d-flex justify-content-end">
+                        <button type="button" class="btn btn-outline-danger">Apagar</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
